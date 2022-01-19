@@ -1,25 +1,25 @@
+
 /* global */
 
 html{
-    font: size 14px;
+    font-size: 14px;
     font-family: 'Titillium Web', sans-serif;
-    background-color: rgb(0,0,0);
-    color: #fefefe;
+    background-color:rgb(255, 255, 255);
+    color:#000000;
 }
 
 a{
-    color: #FF0042;
+    color:#ff0044;
     font-weight: bolder;
-    text-decoration:none;
-
+    text-decoration: none;
 }
 
 h1{
-    font: size 16px;
-    font-weight:bolder;
+    font-size:25px;
+    font-weight: bolder;
 }
 
-/* home.html*/
+
 
 .container{
     margin: 20px;
@@ -29,22 +29,37 @@ h1{
 .subforum{
     margin-top:20px;
 }
-.subforum-title{
-    background-color:#292B2E;
-    padding: 5px;
-    border-radius: 8px;
-    margin: 4px;
 
+.subforum-title{
+    background-color:#626d7c;
+    padding: 5px;
+    border-radius: 5px;
+    margin:4px;
 }
+
 .subforum-row{
     display: grid;
-    grid-template-columns: 7% 60% 13% 20%;
+    grid-template-columns: 76% 12% 12%;
 }
+
 .subforum-column{
     padding: 10px;
-    margin: 4px;
+    margin:4px;
     border-radius: 5px;
-    background-color: #111314;
+    background-color:#acb9c0;
+}
+
+.subforum-info{
+    text-align: center;
+
+}
+
+.subforum-divider{
+    display: block;
+    border: 0;
+    height: 1px;
+    padding: 100px 100px;
+    background-image: linear-gradient(to right, rgba(190, 190, 190, 190. 0), rgba(0, 0, 0, 0.75), rgba(100, 99, 99, 0))
 }
 
 .center{
@@ -52,3 +67,27 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
+.subforum-icon{
+    font-size:45px;
+}
+
+.subforum-description *{
+    margin-block: 0;
+}
+
+/*
+@media screen and ((max-width: 460px) or (max-height: 500)){
+    .container{
+        margin: 10px;
+        padding: 10px;
+    }
+    .subforum-row{
+        display: grid;
+        grid-template-columns: 50% 40% 10%;
+        grid-template-rows: 60% 40%;
+    }
+
+    
+}
+*/

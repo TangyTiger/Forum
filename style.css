@@ -1,4 +1,7 @@
 /* global */
+*{
+    box-sizing: border-box;
+}
 
 html{
     font-size: 14px;
@@ -8,17 +11,20 @@ html{
 }
 
 a{
-    color:#ff0044;
+    color:#FF0042;
     font-weight: bolder;
     text-decoration: none;
 }
 
 h1{
-    font-size:25px;
+    font-size:16px;
     font-weight: bolder;
+    color:#ffffff;
 }
 
 
+
+/* Forums.html */
 
 .container{
     margin: 20px;
@@ -48,17 +54,12 @@ h1{
     background-color:#acb9c0;
 }
 
+.subforum-description *{
+    margin-block: 0;
+}
 .subforum-info{
     text-align: center;
 
-}
-
-.subforum-divider{
-    display: block;
-    border: 0;
-    height: 1px;
-    padding: 100px 100px;
-    background-color:rgb(0, 0, 0)
 }
 
 .center{
@@ -67,50 +68,88 @@ h1{
     align-items: center;
 }
 
-.subforum-icon{
-    font-size:45px;
+.subforum-icon i{
+    font-size: 45px;
 }
 
-.subforum-description *{
-    margin-block: 0;
+.subforum-devider{
+    display: none;   
 }
 
-/*
-@media screen and ((max-width: 460px) or (max-height: 500)){
+
+/* For the smartphones */
+@media screen and (max-width: 460px) {
     .container{
         margin: 10px;
         padding: 10px;
     }
+
     .subforum-row{
         display: grid;
-        grid-template-columns: 50% 40% 10%;
-        grid-template-rows: 60% 40%;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 65% 35%;
+    }
+
+    .subforum-devider{
+        display: block;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
     }
 
     
-}
-*/
 
-/* Navbar */
+  }
 
-/*
+/* For the tablets */
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+    .container{
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .subforum-row{
+        display: grid;
+        grid-template-columns: 10% 60% 10% 20%;
+    }
+
+    .subforum-icon i{
+        font-size: 35px;
+    }
+
+    html{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+  }
+/*   Header Section    */
+
 header{
-    margin-inline:10px;
+    margin-inline: 10px;
 }
-
-
+  /* Nav Bar styles */
 .navbar{
     display:flex;
     align-items: center;
 }
-
-.navigation{ 
+.navigation{
+    background-color:#626d7c;
     padding: 10px;
     width: 65%;
     display: inline-block;
     border-radius: 5px;
     max-height: 80px;
-    margin-right: 10px;
+    margin-right:10px;
+}
+
+.close-icon i{
+    font-size:60px;
+    float: left;
+    cursor: pointer;
 }
 
 .nav-list{
@@ -120,10 +159,14 @@ header{
 
 .nav-item a{
     float: right;
-    display: block;
+    display:block;
     text-align: center;
     margin-inline: 20px;
-    font-size: 20px
+    font-size: 20px;
+    padding: 10px;
+    color:#fff;
 }
 
-*/
+.nav-item a:hover{
+    background-color: rgba(0, 0, 0, 0.295);
+}

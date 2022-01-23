@@ -170,3 +170,36 @@ header{
 .nav-item a:hover{
     background-color: rgba(0, 0, 0, 0.295);
 }
+
+.close-icon i{
+    font-size: 60px;
+    float: left;
+    cursor: pointer;
+    color: white
+}
+
+.hide{
+    display: none;
+}
+
+.bar-icon{
+    font-size: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    color: #626d7c;
+    cursor: pointer;
+}
+
+.brand{
+    font-size: 60px;
+    display: inline-block;
+}
+
+/* search box */
+
+.search-box{
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}

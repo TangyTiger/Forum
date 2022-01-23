@@ -14,13 +14,28 @@
     <header>
         <!--NavBar Section-->
         <div class="navbar">
-            <nav class="navigation">
-                <ul class="nav-list">
+            <nav class="navigation hide" id="navigation">
+                <ul class="nav-list"> 
+                    <span class="close-icon" id="close-icon" onclick="hideNavBar()"><i class="fa fa-close"></i></span>         
                     <li class="nav-item"><a href="#">Forums</a></li>
                     <li class="nav-item"><a href="#">Posts</a></li>
                     <li class="nav-item"><a href="#">Detail</a></li>
                 </ul>
             </nav>
+            <a href="#" class="bar-icon" id="iconBar" onclick="showNavBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">My Forum</div>
+        </div>
+        <!--Search Box-->
+        <div class="search-bloc">
+            <div>
+                <select name=""id=""> 
+                    <option value="everything">Everything</option>
+                    <option value="titles">Titles</option>
+                    <option value="descriptions">Description</option>
+                </select>
+                <input type="text" name="q" id=""" placeholder="search...">
+                <button><i class = "fa fa-search"></i></button>
+            </div>
         </div>
     </header>
     <div class="container">

@@ -20,8 +20,18 @@ function showComment(){
     commentArea.classList.remove("hide");
 }
 
+function hideComment(){
+    var commentArea = document.getElementById("comment-area");
+    commentArea.classList.add("hide");
+}
+
 //Reply
 function showReply(){
     var replyArea = document.getElementById("reply-area");
     replyArea.classList.remove("hide");
+}
+
+function hideReply(){
+    var replyArea = document.getElementById("reply-area");
+    replyArea.classList.add("hide");
 }

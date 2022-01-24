@@ -136,12 +136,13 @@ header{
 .navigation{
     background-color:#626d7c;
     padding: 10px;
-    width: 65%;
+    width: 61%;
     display: inline-block;
     border-radius: 5px;
     max-height: 80px;
     margin-right:10px;
 }
+
 
 .close-icon i{
     font-size:60px;
@@ -315,7 +316,9 @@ footer{
     margin-block: 20px;
     font-weight: lighter;
     font-size: 24px;
+    color: lightblue;
 }
+
 
 .navigate a{
     color: #fff;
@@ -404,9 +407,17 @@ footer{
     float: right;
 }
 
+.content a{
+    color: rgb(48, 91, 131);
+}
+
 /* comment section */
 .comment-area{
     margin-bottom:50px;
+}
+
+.content{
+    font-size: 15px;
 }
 
 .comment-area textarea{
